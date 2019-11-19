@@ -7,10 +7,20 @@ for a single site.
 Instructions for use:
 
 1. #-- Driving data:
-If running for Caxiuana using JULES output, download jules.all.nc. In this script change the variable input_data_path to the path name of the directory in which you have saved jules.all.nc. If running with other data, you require GPP (kg m-2 s-1), canopy temperature (dC) and biomass (kg m-2) for running the model and NPP (kg m-2 s-1) to initialise the model if a value of alpha is not specified. If data is not in .nc file or variable names within nc are different, #-- Driving data should be changed accordingly so that your input data is converted to numpy arrays.
+If running for Caxiuana using JULES output, download jules.all.nc. 
+In this script change the variable input_data_path to the path name of 
+the directory in which you have saved jules.all.nc. If running with other data, 
+you require GPP (kg m-2 s-1), canopy temperature (dC) and biomass (kg m-2) for 
+running the model and NPP (kg m-2 s-1) to initialise the model if a value of alpha 
+is not specified. If data is not in .nc file or variable names within nc are different,
+#-- Driving data should be changed accordingly so that your input data is 
+converted to numpy arrays.
 
 2. #--Initialisation data
-If values of phi and alpha are not specified by the user (see 3. #--Parameters) they are estimated using a period of initialisation data. This should contain GPP, NPP and biomass. In the Caxiuana runs the first year of data from the driving dataset is used for this.
+If values of phi and alpha are not specified by the user (see 3. #--Parameters)
+they are estimated using a period of initialisation data. This should contain GPP, 
+NPP and biomass. In the Caxiuana runs the first year of data from the driving 
+dataset is used for this.
 
 3. #--Parameters
 All parameters can be changed. The default parameters below were used in the original study.
