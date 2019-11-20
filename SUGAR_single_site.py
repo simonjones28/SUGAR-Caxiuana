@@ -129,7 +129,7 @@ plt.title('GPP vs PCE',size = 14)
 plt.ylabel('Flux (kg m$^{-2}$ s$^{-1}$)',size = 14)
 plt.xlabel('Date',size = 14)
 plt.legend()
-plt.show()
+
 
 plt.figure()
 C_NSC_gb_plot.resample('D').mean().plot()
@@ -137,4 +137,6 @@ plt.title('NSC content',size = 14)
 plt.ylabel('NSC content (kg m$^{-2}$)',size = 14)
 plt.xlabel('Date',size = 14)
 plt.show()
+
+input()
 
