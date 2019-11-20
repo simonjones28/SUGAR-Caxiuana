@@ -66,7 +66,7 @@ dt              = 3600.0                                                 # times
 data_period     = pd.date_range(start_date,end_date,freq = str(dt)+'S')
 P_len           = len(data_period)
 gpp_gb          = dataset_drive.variables['gpp_gb'][:,0,0]               # Driving Gridbox GPP (kg m-2 s-1)
-T1p5m_gb        = dataset_drive.variables['t1p5m_gb'][:,0,0]             # Driving Gridbox temperature (degrees C)
+T1p5m_gb        = dataset_drive.variables['t1p5m_gb'][:,0,0]-273.15      # Driving Gridbox temperature (degrees C)
 if l_cv_const == False:
 	C_v_gb  = dataset_drive.variables['cv'][:,0,0]                   # Gridbox structural biomas (kg m-2)
 
